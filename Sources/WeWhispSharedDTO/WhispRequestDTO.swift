@@ -9,7 +9,14 @@ import Foundation
 
 public struct WhispRequestDTO: Codable {
     public let content: String
-    public let emotionl: String
+    public let emotion: String
     public let visibilityLevel: Int
     public let isAnonymous: Bool
+    
+    public init(content: String, emotion: String, visibilityLevel: Int, isAnonymous: Bool) {
+        self.content = content
+        self.emotion = emotion
+        self.visibilityLevel = visibilityLevel
+        self.isAnonymous = isAnonymous
+    }
 }
