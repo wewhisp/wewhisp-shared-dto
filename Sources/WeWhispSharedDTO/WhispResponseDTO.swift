@@ -13,7 +13,7 @@ public struct WhispResponseDTO: Codable{
     public let emotion: String
     public let visibilityLevel: Int
     public let isAnonymous: Bool
-    public let createdAt: Date
+    public let createdAt: Date?
     public let updatedAt: Date?
     
     public init(id: UUID, content: String, emotion: String, visibilityLevel: Int, isAnonymous: Bool, createdAt: Date, updatedAt: Date?) {
