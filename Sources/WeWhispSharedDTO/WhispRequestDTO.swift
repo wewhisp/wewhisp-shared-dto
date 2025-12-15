@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct WhispRequestDTO: Codable {
+public struct WhispRequestDTO: Codable, Sendable {
     public let content: String
     public let emotion: String
     public let visibilityLevel: Int

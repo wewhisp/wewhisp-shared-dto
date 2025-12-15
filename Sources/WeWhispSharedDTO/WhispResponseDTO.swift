@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct WhispResponseDTO: Codable{
+public struct WhispResponseDTO: Codable, Sendable{
     public let id: UUID
     public let content: String
     public let emotion: String
