@@ -6,7 +6,7 @@
 //
 
 import Foundation
-public struct UserProfileResponseDTO: Codable, Sendable {
+public struct UserProfileResponseDTO: Codable {
     public let displayName: String
     public let avatarSeed: String
     public let bio: String?
