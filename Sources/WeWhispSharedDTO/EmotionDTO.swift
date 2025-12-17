@@ -11,4 +11,18 @@ public struct EmotionDTO: Codable, Sendable {
     public let displayName: String
     public let colorHex: String
     public let icon: String
+    
+    public init(
+        id: UUID,
+        slug: String,
+        displayName: String,
+        colorHex: String,
+        icon: String
+    ) {
+        self.id = id
+        self.slug = slug
+        self.displayName = displayName
+        self.colorHex = colorHex
+        self.icon = icon
+    }
 }
