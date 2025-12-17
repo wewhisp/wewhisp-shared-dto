@@ -7,15 +7,15 @@
 
 import Foundation
 
-public struct WhispRequestDTO: Codable, Sendable {
+public struct WhispRequestDTO: Codable {
     public let content: String
-    public let emotion: String
+    public let emotionId: UUID
     public let visibilityLevel: Int
     public let isAnonymous: Bool
     
-    public init(content: String, emotion: String, visibilityLevel: Int, isAnonymous: Bool) {
+    public init(content: String, emotionId: UUID, visibilityLevel: Int, isAnonymous: Bool) {
         self.content = content
-        self.emotion = emotion
+        self.emotionId = emotionId
         self.visibilityLevel = visibilityLevel
         self.isAnonymous = isAnonymous
     }
