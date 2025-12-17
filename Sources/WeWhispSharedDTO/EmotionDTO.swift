@@ -6,23 +6,24 @@
 //
 import Foundation
 public struct EmotionDTO: Codable, Sendable {
+    
     public let id: UUID
-    public let slug: String
+    public let code: String
     public let displayName: String
-    public let colorHex: String
     public let icon: String
+    public let color: String
     
     public init(
         id: UUID,
-        slug: String,
+        code: String,
         displayName: String,
-        colorHex: String,
-        icon: String
+        icon: String,
+        color: String
     ) {
         self.id = id
-        self.slug = slug
+        self.code = code
         self.displayName = displayName
-        self.colorHex = colorHex
         self.icon = icon
+        self.color = color
     }
 }
