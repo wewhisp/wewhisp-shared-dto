@@ -5,10 +5,10 @@
 //  Created by Carlo Contardi on 20/12/25.
 //
 
-struct LoginRequestDTO: Codable {
-    let email: String
-    let password: String
-    init(email: String, password: String) {
+public struct LoginRequestDTO: Codable {
+    public let email: String
+    public let password: String
+    public init(email: String, password: String) {
         self.email = email
         self.password = password
     }
