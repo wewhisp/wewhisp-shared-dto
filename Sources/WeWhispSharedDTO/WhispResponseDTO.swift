@@ -14,6 +14,8 @@ public struct WhispResponseDTO: Codable, Sendable {
     public let emotion: EmotionDTO
     public let visibilityLevel: Int
     public let isAnonymous: Bool
+    public let authorId: UUID?
+
     public let author: WhispAuthorDTO?
     public let createdAt: Date?
     public let updatedAt: Date?
@@ -24,6 +26,7 @@ public struct WhispResponseDTO: Codable, Sendable {
         emotion: EmotionDTO,
         visibilityLevel: Int,
         isAnonymous: Bool,
+        authorId: UUID?,
         author: WhispAuthorDTO?,
         createdAt: Date?,
         updatedAt: Date?
@@ -33,6 +36,7 @@ public struct WhispResponseDTO: Codable, Sendable {
         self.emotion = emotion
         self.visibilityLevel = visibilityLevel
         self.isAnonymous = isAnonymous
+        self.authorId = authorId      
         self.author = author
         self.createdAt = createdAt
         self.updatedAt = updatedAt
