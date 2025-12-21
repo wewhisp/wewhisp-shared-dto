@@ -6,4 +6,7 @@
 //
 public struct ConnectionResponseDTO: Codable{
     public let from: ConnectionResponseAction
+    public init(from action: ConnectionResponseAction) {
+        self.from = action
+    }
 }
