@@ -7,4 +7,7 @@
 
 public struct CreateMessageDTO: Codable{
     public let content: String
+    public init(content: String) {
+        self.content = content
+    }
 }
