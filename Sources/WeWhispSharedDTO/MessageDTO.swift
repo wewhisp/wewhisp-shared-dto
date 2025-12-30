@@ -12,11 +12,19 @@ public struct MessageDTO: Codable, Sendable {
     public let senderId: UUID
     public let content: String
     public let createdAt: Date?
+    public let reactions: [MessageReactionDTO]?
     
-    public init(id: UUID, senderId: UUID, content: String, createdAt: Date?) {
+    public init(
+        id: UUID,
+        senderId: UUID,
+        content: String,
+        createdAt: Date?,
+        reactions: [MessageReactionDTO]? = nil
+    ) {
         self.id = id
         self.senderId = senderId
         self.content = content
         self.createdAt = createdAt
+        self.reactions = reactions
     }
 }
