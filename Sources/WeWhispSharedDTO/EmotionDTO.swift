@@ -5,7 +5,7 @@
 //  Created by Carlo Contardi on 17/12/25.
 //
 import Foundation
-public struct EmotionDTO: Codable, Sendable {
+public struct EmotionDTO: Codable, Sendable, Equatable {
     
     public let id: UUID
     public let code: String
