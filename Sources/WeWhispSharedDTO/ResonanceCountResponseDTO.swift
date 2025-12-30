@@ -8,6 +8,9 @@
 import Foundation
 
 /// Response DTO per il conteggio delle interazioni ricevute (resonance)
-struct ResonanceCountResponseDTO: Codable, Sendable {
-    let count: Int
+public struct ResonanceCountResponseDTO: Codable, Sendable {
+    public let count: Int
+    public init(count: Int) {
+        self.count = count
+    }
 }
